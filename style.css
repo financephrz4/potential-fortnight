@@ -1,0 +1,405 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* NAVBAR */
+.navbar {
+  padding: 12px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+/* INFO AWAL */
+.info-awal {
+  background-color: #d61608f8; /* Warna abu muda */
+  padding: 50px 0;
+}
+
+.info-awal p {
+  font-size: 30px;
+  color: #ffffff;
+  font-style:oblique;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+
+/* HERO / CAROUSEL */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 46, 183, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.btn-custom {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.btn-custom:hover {
+  transform: scale(1.1);
+  background-color: #cc0000;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0033a0;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* TREE DIAGRAM STYLES */
+.tree {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background: #e1e1e15c;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+}
+
+.tree li {
+  display: inline-block;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 5px 0 5px;
+}
+
+.tree li a {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #2E8BC0;
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.tree li a:hover {
+  background-color: #0F4C75;
+  border: 1px solid #0F4C75;
+}
+
+.tree li a.orange {
+  background-color: #FF914D;
+}
+
+.tree li a.green {
+  background-color: #00A86B;
+}
+
+/* DETAIL CARD */
+.detail-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  min-height: 380px; /* Biar ukurannya seragam */
+}
+
+.detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.detail-card ul {
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.detail-card ul li {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 8px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.detail-card ul li i {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .detail-card {
+    min-height: auto; /* Supaya tidak terlalu besar di layar kecil */
+  }
+}
+
+
+
+.detail-card .icon {
+  font-size: 40px;
+  color: #0033a0;
+  margin: 10px;
+}
+
+.icon {
+  font-size: 40px;
+  color: #0033a0;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+
+/* CONTACT SECTION */
+
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px; /* Tambah padding supaya lebih luas */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  margin: 20px; /* Tambah margin antar card */
+}
+
+.row.justify-content-center {
+  padding: 20px; /* Tambah padding supaya lebih luas */
+}
+
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer; /* Menjadikan pointer saat hover */
+}
+
+.contact-link {
+  text-decoration: none; /* Menghilangkan underline */
+  display: block;
+  color: inherit; /* Warna teks tetap mengikuti default */
+}
+
+.contact-link:hover {
+  color: #0F4C75; /* Agar warna teks tidak berubah saat hover */
+}
+
+
+.icon-contact {
+  font-size: 40px;
+  color: #0033a0;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #0033a0;
+  font-weight: bold;
+}
+
+.contact-card a:hover {
+  color: #ff0000;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-section p {
+  font-size: 30px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-section i {
+  color: #28a745;
+  margin-right: 5px;
+}
+
+/* Gambar agar responsive */
+.about-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol utama */
+.btn-primary {
+  background-color: #ff0000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+/* TREE DIAGRAM SECTION BACKGROUND */
+#about {
+  background-color: #f0f7ff;
+  padding: 50px 0;
+}
+
+#about h1 {
+  color: #0033a0;
+  font-weight: bold;
+}
+/* RESPONSIVE IMAGE UNTUK STRUKTUR ORGANISASI */
+.org-structure {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Biar tetap di tengah */
+}
+
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 992px) {
+  .hero {
+      height: 80vh;
+  }
+
+  .hero .carousel-item img {
+      height: 80vh;
+  }
+
+  .tree li {
+      display: block;
+      padding: 10px 0;
+  }
+
+  .contact-card {
+      padding: 15px;
+  }
+
+  .about-section img {
+      max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+      height: 60vh;
+  }
+
+  .hero .carousel-item img {
+      height: 60vh;
+  }
+
+  .btn-custom {
+      padding: 8px 16px;
+  }
+
+
+  .contact-card {
+      padding: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
+      height: 50vh;
+  }
+
+  .hero .carousel-item img {
+      height: 50vh;
+  }
+
+  .btn-custom {
+      padding: 6px 12px;
+  }
+
+
+  .contact-card {
+      padding: 8px;
+  }
+
+  footer {
+      font-size: 12px;
+  }
+}
